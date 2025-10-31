@@ -9,7 +9,7 @@ Content-Type: application/json
 
 {
     "name": "CS:GO",
-    "genre": "Action, Shouter",
+    "genreId": 1,
     "price": 50.2,
     "releaseDate": "1990-03-10"
 }

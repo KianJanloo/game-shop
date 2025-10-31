@@ -15,4 +15,6 @@ app.MapGet("/", () => "Hello World!");
 
 app.MapGamesEndpoints();
 
+app.MigrateDb();
+
 app.Run();
