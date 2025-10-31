@@ -1,9 +1,12 @@
 using WebApplication1.Data;
 using WebApplication1.Endpoints;
+using SQLitePCL;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connString = "Data Source=GameShop.db";
+Batteries.Init();
+
+var connString = builder.Configuration.GetConnectionString("GameShop");
 builder.Services.AddSqlite<GameShopContext>(connString);
 
 var app = builder.Build();
