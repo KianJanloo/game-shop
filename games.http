@@ -1,7 +1,7 @@
 GET http://localhost:5162/games
 
 ###
-GET http://localhost:5162/games/1
+GET http://localhost:5162/games/3
 
 ###
 POST http://localhost:5162/games
@@ -9,21 +9,21 @@ Content-Type: application/json
 
 {
     "name": "CS:GO",
-    "genreId": 1,
+    "genreId": 2,
     "price": 50.2,
     "releaseDate": "1990-03-10"
 }
 
 ###
-PUT http://localhost:5162/games/2
+PUT http://localhost:5162/games/3
 Content-Type: application/json
 
 {
     "name": "Call Of Duty",
-    "genre": "Action",
+    "genreId": 2,
     "price": 19.2,
     "releaseDate": "2020-02-02"
 }
 
 ###
-DELETE  http://localhost:5162/games/1
+DELETE  http://localhost:5162/games/2
